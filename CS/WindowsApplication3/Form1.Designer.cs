@@ -27,11 +27,8 @@ namespace WindowsApplication3 {
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.checkedComboBoxEdit1 = new DevExpress.XtraEditors.CheckedComboBoxEdit();
             this.toolTipController1 = new DevExpress.Utils.ToolTipController(this.components);
-            this.carsDBDataSet = new WindowsApplication3.CarsDBDataSet();
             this.carsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.carsTableAdapter = new WindowsApplication3.CarsDBDataSetTableAdapters.CarsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.carsDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.carsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,19 +53,9 @@ namespace WindowsApplication3 {
             // 
             this.toolTipController1.GetActiveObjectInfo += new DevExpress.Utils.ToolTipControllerGetActiveObjectInfoEventHandler(this.OnGetActiveObject);
             // 
-            // carsDBDataSet
-            // 
-            this.carsDBDataSet.DataSetName = "CarsDBDataSet";
-            this.carsDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // carsBindingSource
             // 
-            this.carsBindingSource.DataMember = "Cars";
-            this.carsBindingSource.DataSource = this.carsDBDataSet;
-            // 
-            // carsTableAdapter
-            // 
-            this.carsTableAdapter.ClearBeforeFill = true;
+            this.carsBindingSource.DataMember = "CarScheduling";
             // 
             // Form1
             // 
@@ -80,7 +67,6 @@ namespace WindowsApplication3 {
             this.Text = "Show ToolTip For Individual Value";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.carsDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.carsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -91,9 +77,7 @@ namespace WindowsApplication3 {
         private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
         private DevExpress.XtraEditors.CheckedComboBoxEdit checkedComboBoxEdit1;
         private DevExpress.Utils.ToolTipController toolTipController1;
-        private CarsDBDataSet carsDBDataSet;
         private System.Windows.Forms.BindingSource carsBindingSource;
-        private WindowsApplication3.CarsDBDataSetTableAdapters.CarsTableAdapter carsTableAdapter;
     }
 }
 
