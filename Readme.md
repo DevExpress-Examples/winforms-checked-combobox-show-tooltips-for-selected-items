@@ -9,7 +9,7 @@
 
 This example assigns a [ToolTipController](https://docs.devexpress.com/WindowsForms/DevExpress.Utils.ToolTipController) component to the WinForms CheckedComboBoxEdit control and handles the [ToolTipController.GetActiveObjectInfo](https://docs.devexpress.com/WindowsForms/DevExpress.Utils.ToolTipController.GetActiveObjectInfo) event to show a custom [super tooltip](https://docs.devexpress.com/WindowsForms/DevExpress.Utils.SuperToolTip) for items/values displayed in the edit box:
 
-![WinForms Checked ComboBox - Display a super tooltip for selected items in the edit box ](https://raw.githubusercontent.com/DevExpress-Examples/how-to-show-separate-tool-tips-for-values-shown-in-the-checkedcomboboxedits-edit-box-e2637/13.1.4%2B/media/winforms-checked-combobox-custom-tooltips.png)
+![WinForms Checked ComboBox - Display a super tooltip for selected items in the edit box ](media/winforms-checked-combobox-custom-tooltips.png)
 
 
 ## Files to Review
@@ -27,3 +27,4 @@ This example assigns a [ToolTipController](https://docs.devexpress.com/WindowsFo
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
